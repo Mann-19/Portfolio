@@ -1,0 +1,85 @@
+.projects {
+  position: relative;
+  min-height: 100vh;
+}
+
+.bento {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 25px;
+}
+
+.grid-item {
+  font-family: var(--Roboto);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.1px);
+  -webkit-backdrop-filter: blur(11.1px);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  z-index: 50;
+  transition: 0.3s transform ease-in-out;
+}
+
+.grid-item:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 40px 5px rgba(255, 255, 255, 0.2);
+}
+
+.div6 {
+  border: none;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  height: 100px;
+  text-align: center;
+  margin-top: 4.5rem;
+  color: var(--Blue);
+  font-size: 3rem;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media (min-width: 767px) {
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 40px);
+    gap: 25px;
+  }
+
+  .grid-item {
+    border-radius: 20px;
+    padding: 25px;
+    height: auto;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 5 / 5;
+  }
+  .div2 {
+    grid-area: 5 / 1 / 9 / 4;
+  }
+  .div3 {
+    grid-area: 9 / 1 / 13 / 4;
+  }
+  .div4 {
+    grid-area: 1 / 5 / 8 / 8;
+  }
+  .div5 {
+    grid-area: 8 / 4 / 13 / 8;
+  }
+  .div6 {
+    grid-area: 5 / 4 / 8 / 5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

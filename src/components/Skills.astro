@@ -1,0 +1,78 @@
+---
+---
+
+<!-- Skills Section -->
+<style>
+  .skills-wrapper {
+    position: relative;
+  }
+
+  .heading {
+    position: relative;
+  }
+
+  #arrow {
+    display: none;
+  }
+
+  .skills i{
+    font-size: 60px;
+    filter: invert(1);
+    opacity: 0.75;
+  }
+
+  @media (min-width: 767px) {
+    .heading img {
+      position: absolute;
+      left: 260px;
+    }
+
+    #arrow {
+      display: block;
+    }
+
+    .skills i{
+      font-size: 100px;
+    }
+  }
+</style>
+
+<!-- Skills section -->
+<section class="skills-wrapper py-10 mt-16" id="skills-section">
+  <!-- Heading -->
+  <div class="heading px-[3rem] md:px-[5rem]">
+    <h2
+      class="font-Roboto text-Pink text-center md:text-left md:text-5xl md:max-w-[30vw] text-4xl font-bold"
+    >
+      My Developer Arsenal
+    </h2>
+    <img src="/arrow.svg" alt="arrow" id="arrow" class="md:-mt-6" />
+    <img
+      src="/arrow-mobile.svg"
+      id="arrow-mobile"
+      alt="arrow"
+      class="md:hidden h-[120px] m-auto my-6"
+    />
+  </div>
+
+  <!-- Skills Icons -->
+  <div class="skills flex gap-16 flex-wrap md:px-[5rem] mt-20 mb-32 justify-center">
+    <i class="devicon-react-original"></i>
+    <i class="devicon-figma-plain"></i>
+    <i class="devicon-nextjs-plain"></i>
+    <i class="devicon-firebase-plain"></i>
+    <i class="devicon-tailwindcss-original"></i>
+    <i class="devicon-html5-plain-wordmark"></i>
+    <i class="devicon-javascript-plain"></i>
+    <i class="devicon-python-plain"></i>
+    <i class="devicon-nodejs-plain-wordmark"></i>
+    <i class="devicon-astro-plain"></i>
+    <i class="devicon-mongodb-plain-wordmark"></i>
+    <i class="devicon-cplusplus-plain"></i>
+    <i class="devicon-express-original-wordmark"></i>
+    <i class="devicon-git-plain-wordmark"></i>
+    <i class="devicon-materialui-plain"></i>
+    <i class="devicon-redux-original"></i>
+    <i class="devicon-typescript-plain"></i>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+---
+import "../styles/hero.css";
+
+const logo = "mann.dev";
+---
+
+<!-- Landing Page -->
+<section class="hero-section p-6 md:py-10 md:px-16 overflow-x-hidden flex justify-center items-center">
+  <!-- Logo -->
+  <div class="logo font-League h-fit text-2xl md:text-4xl font-bold text-primaryDark">
+    {logo}
+  </div>
+
+  <!-- Mobile Hero Section -->
+  <div class="mobile-hero md:hidden">
+    <!-- top circles -->
+    <div id="top-solid-circle" class="border border-primaryLight w-[180px] opacity-60 aspect-square rounded-full"></div>
+    <img id="top-dashed-circle" src="/dashed-circle-mobile.svg" alt="circle">
+
+    <!-- square grids -->
+     <img id="top-square-grid" src="/sq-grid-mobile.svg" alt="square-grid">
+     <img id="bottom-square-grid" src="/sq-grid-mobile.svg" alt="square-grid">
+  </div>
+
+  <!-- Desktop Hero Section -->
+  <div class="desktop-hero hidden md:block text-white">
+    <div id="top-solid-circle" class="border border-primaryLight w-[280px] opacity-60 aspect-square rounded-full"></div>
+    <img id="top-dashed-circle" src="/dashed-circle.svg" alt="circle">
+
+    <!-- square grids -->
+    <img id="top-square-grid" src="/sq-grid.svg" alt="square-grid">
+    <img id="bottom-square-grid" src="/sq-grid.svg" alt="square-grid">
+  </div>
+
+  <!-- Bio - Name, button, role -->
+  <main class="bio flex flex-col gap-6 justify-center items-center md:mt-16">
+    <h2 class="text-5xl text-center md:text-7xl tracking-wide font-Atkinson font-bold text-primaryLight">Prajapati Mann</h2>
+    <p class="text-2xl md:text-3xl text-center font-Roboto text-primaryDark font-medium">Full-Stack Developer</p>
+    <div class="buttons-wrapper mt-3 flex flex-col items-center gap-4">
+      <button id="projects-btn" class=" rounded-full border-primaryLight text-primaryLight border text-md md:text-lg px-4 py-2  bg-gradient-to-r from-[rgb(255,255,255,0.5)] via-[rgb(255,255,255,0.2)] to-transparent w-fit">Projects</button>
+      <button id="skills-btn" class="rounded-full border-primaryLight text-primaryLight border text-md md:text-lg px-4 py-2  bg-gradient-to-r from-[rgb(255,255,255,0.5)] via-[rgb(255,255,255,0.2)] to-transparent w-fit">Skills</button>
+    </div>
+  </main>
+</section>

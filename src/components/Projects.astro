@@ -1,0 +1,122 @@
+---
+import "../styles/projects.css";
+import ProjectCard from "./utils/ProjectCard.jsx";
+
+// Projects Data
+const data = [
+  {
+    name: "Google Docs Clone",
+    desc: "Collaborative document editing with rich text editing features",
+    tags: ["ReactJS", "Socket.io", "TailwindCSS"],
+    class: "div1",
+    githubLink: "https://github.com/Mann-19/Travel-website",
+  },
+  {
+    name: "Summify",
+    desc: "AI-based tool to summarize your articles from the web",
+    tags: ["ReactJS", "Material-UI", "RapidAPI"],
+    class: "div2",
+    githubLink: "https://github.com/Mann-19/Travel-website",
+  },
+  {
+    name: "Ananta '24 Website",
+    desc: "Frontend Development for a 3-day event website",
+    tags: ["ReactJS", "TailwindCSS", "Figma"],
+    class: "div3",
+    githubLink: "https://github.com/Mann-19/Travel-website",
+  },
+  {
+    name: "Workout Buddy",
+    desc: "MERN Stack project with authentication and mongoDb database intergration",
+    tags: ["ReactJS", "NodeJS", "MongoDB", "JWT", "TailwindCSS", "Figma"],
+    class: "div4",
+    githubLink: "https://github.com/Mann-19/Travel-website",
+  },
+  {
+    name: "TourAdvisor",
+    desc: "Full-stack travel website with travel places, itineraries & tours suggestions",
+    tags: ["Pug(Jade)", "TailwindCSS", "MongoDB", "NodeJS"],
+    class: "div5",
+    githubLink: "https://github.com/Mann-19/Travel-website",
+  },
+  {
+    name: "Projects",
+    class: "div6",
+  },
+];
+---
+
+<!-- Projects Section -->
+<section class="projects relative overflow-x-hidden" id="projects-section">
+  <!-- Bento Grid -->
+  <div class="bento p-10 md:py-[6rem] md:px-[8rem]">
+    {
+      data.map((item, i) => (
+        <ProjectCard
+          name={item.name}
+          className={item.class}
+          tags={item.tags}
+          desc={item.desc}
+          githubLink={item.githubLink}
+          client:only="react"
+        />
+      ))
+    }
+  </div>
+
+  <!-- Background Designs - Mobile -->
+  <div class="bg-wrapper-mobile md:hidden">
+    <img
+      src="/sq-grid-mobile.svg"
+      class="md:hidden h-[140px] absolute top-12 left-8"
+      alt=""
+    />
+
+    <img
+      src="/gradient-1.svg"
+      alt="gradient"
+      class="w-[320px] aspect-square absolute top-[25%] -left-[100px] -z-10"
+    />
+
+    <img
+      src="/gradient-2.svg"
+      alt="gradient"
+      class="w-[400px] aspect-square absolute top-[53%] -right-[100px] -z-10"
+    />
+
+    <img
+      src="/sq-grid-mobile.svg"
+      class="md:hidden h-[140px] absolute right-4 bottom-[13%] -z-10"
+      alt=""
+    />
+  </div>
+
+  <!-- Background Design - Desktop -->
+  <div
+    class="bg-wrapper-desktop hidden md:block overflow-hidden absolute top-0 left-0 w-full h-full"
+  >
+    <img
+      src="/sq-grid.svg"
+      class="w-[230px] absolute left-10 top-12 -z-10"
+      alt=""
+    />
+
+    <img
+      src="/gradient-1.svg"
+      alt="gradient"
+      class="w-[450px] aspect-square absolute top-[20%] -left-[100px] -z-10"
+    />
+
+    <img
+      src="/gradient-2.svg"
+      alt="gradient"
+      class="w-[520px] aspect-square absolute top-[33%] -right-[180px] -z-10"
+    />
+
+    <img
+      src="/sq-grid.svg"
+      class="w-[230px] absolute bottom-0 right-10 -z-10"
+      alt=""
+    />
+  </div>
+</section>

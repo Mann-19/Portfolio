@@ -1,0 +1,70 @@
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+#top-solid-circle {
+  position: absolute;
+  top: -5%;
+  left: -4%;
+}
+
+#top-dashed-circle {
+  position: absolute;
+  top: 13%;
+  width: 180px;
+  left: 10%;
+}
+
+#top-square-grid {
+  height: 140px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+#bottom-square-grid {
+  height: 140px;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+}
+
+@media (min-width: 767px) {
+  .logo {
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+  }
+
+  #top-solid-circle {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+  }
+
+  #top-dashed-circle {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 300px;
+  }
+
+  #top-square-grid {
+    position: absolute;
+    width: 230px;
+    top: 0;
+    right: 2.5rem;
+  }
+  #bottom-square-grid {
+    position: absolute;
+    width: 230px;
+    bottom: 0;
+    left: 2.5rem;
+  }
+}
